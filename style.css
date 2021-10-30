@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-size: 15px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.container {
+    background-color: hsl(0, 0%, 98%);
+    
+}
+
+.main-heading {
+    text-align: center;
+    padding: 50px;
+}
+
+.heading-top {
+    font-weight: 200;
+    font-size: 2rem;
+    color: var(--VeryDarkBlue)
+}
+
+.heading-bottom {
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--VeryDarkBlue)
+}
+
+.para {
+    font-weight: 400;
+    color: var(--GrayishBlue);
+    display: inline-block;
+    width: 500px;
+    margin-top: 20px;
+}
+
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+  padding: 20px;
+  padding-right: 40px;;
+  background-color: hsl(0,0,98%);
+  box-shadow: 0px 10px 15px 0px hsl(229, 6%, 66%, 0.3);
+  position: relative;
+  border-radius:4px;
+}
+
+.card-heading{
+    font-weight: 600;
+    color: var(--VeryDarkBlue);
+    font-size: 1.2rem;
+}
+
+.card-text{
+    font-weight: 400;
+    color: var(--GrayishBlue);
+    font-size: 0.8rem;
+}
+
+.card-icon{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+.card-1{
+border-top: 4px solid var(--Cyan);
+}
+
+.card-2{
+    border-top: 4px solid var(--Red);
+
+}
+
+.card-3{
+    border-top: 4px solid var(--Orange)
+}
+
+.card-4{
+    border-top: 4px solid var(--Blue);
+}
+
+.middle-card-container{
+    width: 340px;
+    height: 460px;
+}
+
+
+@media screen and (max-width: 850px){
+    .card-container{
+       flex-direction: column;
+    }
+
+    .para{
+        width: 80vw;
+    }
+}
